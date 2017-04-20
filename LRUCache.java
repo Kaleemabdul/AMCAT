@@ -1,12 +1,8 @@
-package ExtraWork;
-
-
 import java.util.LinkedList;
-
-
 /**
  *
  * @author saiteja21
+ *Given function takes cache size, pages and pages size. Function returns number of cache mises.
  */
 public class LRUCache {
     
@@ -37,3 +33,11 @@ public class LRUCache {
        return count; 
     }    
 }
+public class PracticeSession {
+    
+    public static void main(String[] args)throws Exception{
+       int cache_size=2,pages[]={2,3,1,3,2,1,4,3,2},page_size=9;
+        System.out.println(LRUCache.lruFunction(a, b, c));
+    }   
+}
+//output is: 8
