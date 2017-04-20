@@ -1,15 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package AMCAT;
-
-/**
- *
- * @author saiteja21
- */
-public class MikesSuccess {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+public class PracticeSession {
+    
     public static void checkSuccess(String check[]){
         boolean flag=true;
         for (String check1 : check) {
@@ -23,6 +15,26 @@ public class MikesSuccess {
             }else
                 System.out.println("NO");  
         }
-    }          // ababab 
-               // 012345
+    }
+    
+    public static void main(String[] args)throws Exception{
+        int test_cases;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        test_cases = Integer.parseInt(br.readLine().trim());
+        String[] string = new String[test_cases];
+        for(int i=0;i<test_cases;i++){
+            string[i]= br.readLine().trim();
+        }
+        checkSuccess(string);
+    }   
 }
+/*
+Input:
+2
+ABABAB
+ABC
+
+Output:
+YES
+NO
+*/
